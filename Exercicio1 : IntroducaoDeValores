@@ -1,0 +1,22 @@
+/* Crie um array de 10 valores introduzidos
+pelo usuario */
+
+import java.util.Scanner;
+  public class Exercicio1{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int [] valores = new int[10];
+
+    for(byte i = 0; i < valores.length; i++){
+      System.out.println("Introduza o "+(i+1)+"o valor : ");
+      valores[i] = s.nextInt();
+    }
+
+    for(byte i = 0; i < valores.length; i++){
+      System.out.print(valores[i]+" ");
+    }
+  }
+}
+    
