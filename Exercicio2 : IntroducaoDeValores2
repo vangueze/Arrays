@@ -1,0 +1,26 @@
+/* Crie um algoritmo que introduza valores
+numa matriz de 3 dimensoes, ou seja, tres
+linhas e tres colunas */
+
+import java.util.Scanner;
+  public class Exercicio2{
+    public static void main(String[]args){
+
+    Scanner s = new Scanner(System.in);
+
+    int [][] valores = new int[3][3];
+
+    for(byte i = 0; i < valores.length; i++){
+      for(byte j = 0; j < valores.length; j++){
+        System.out.println("Introduza o valor da "+(i+1)+"a linha e "+(j+1)+"a coluna : ");
+        valores[i][j] = s.nextInt();
+      }
+    }
+
+    for(byte i = 0; i < valores.length; i++){
+      for(byte j = 0; j < valores.length; j++){
+        System.out.print(valores[i][j]+" ");
+      }
+    }
+  }
+}
