@@ -1,0 +1,60 @@
+/* Crie dois vectores e introduza dados
+do teclado, e em seguida realize a troca
+de valores entre os dois vectores */
+
+import java.util.Scanner;
+  public class Exercicio3{
+    public static void main(String[]args){
+
+      Scanner s = new Scanner (System.in);
+
+      int [] vet1 = new int [5];
+      int [] vet2 = new int [5];
+      int [] aux = new int[5];
+
+      System.out.println("1o vector");
+      for(byte i = 0; i < vet1.length; i++){
+        System.out.println("Introduza o "+(i+1)+"o valor : ");
+        vet1[i] = s.nextInt();
+      }
+
+      System.out.println("2o vector");
+      for(byte i = 0; i < vet2.length; i++){
+        System.out.println("Introduza o "+(i+1)+"o valor : ");
+        vet2[i] = s.nextInt();
+      }
+
+      System.out.println("Antes da troca");
+
+      System.out.println("1o vector");
+      for(byte i = 0; i < vet1.length; i++){
+        System.out.print(vet1[i]+" ");
+      }
+      System.out.println();
+      System.out.println("2o vector");
+      for(byte i = 0; i < vet2.length; i++){
+        System.out.print(vet2[i]+" ");
+      }
+
+      for(byte i = 0; i < aux.length; i++){
+        aux[i] = vet1[i];
+        vet1[i] = vet2[i];
+        vet2[i] = aux[i];
+      }
+
+      System.out.println();
+      System.out.println("Depois da troca");
+
+      System.out.println("1o vector");
+      for(byte i = 0; i < vet1.length; i++){
+        System.out.print(vet1[i]+" ");
+      }
+
+      System.out.println();
+      System.out.println("2o vector");
+      for(byte i = 0; i < vet2.length; i++){
+        System.out.print(vet2[i]+" ");
+      }
+      }
+    }
+  
