@@ -1,0 +1,39 @@
+/* Criar dois vetores A e B cada um com 5
+elementos inteiros. Construir um vetor C,
+onde cada elemento de C eh a soma dos 
+respectivos elementos em A e B, ou seja,
+C[i] = A[i] + B[i] */
+
+public class Exericico11{
+  public static void main(String[]args){
+
+  int [] a = new int []{12,4,7,10,15};
+  int [] b = new int []{3,2,8,11,5};
+  int [] c = new int [5];
+
+  for(int i = 0; i < 5; i++){
+    c[i] = a[i] + b[i];
+  }
+
+  System.out.println();
+
+  System.out.println("Vetor A");
+  for(int i = 0; i < a.length; i++){
+    System.out.print(a[i]+" ");
+  }
+
+  System.out.println();
+
+  System.out.println("Vetor B");
+  for(int i = 0; i < b.length; i++){
+    System.out.print(b[i]+" ");
+  }
+
+  System.out.println();
+
+  System.out.println("Vetor C");
+  for(int i = 0; i < c.length; i++){
+    System.out.print(c[i]+" ");
+  }
+}
+}
