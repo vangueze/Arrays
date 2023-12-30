@@ -1,1 +1,29 @@
+/* Criar um vetor A com 5 elementos inteiros.
+Construir um vetor B do mesmo tipo e tamanho,
+sendo que cada elemento do vetor B devera
+ser a raiz quadrada do respectivo elemento 
+de A, ou seja, B[i] = sqrt(A[i]) */
 
+public class Exercicio9{
+  public static void main(String[]args){
+
+  int [] a = new int []{4,9,25,16,36};
+  int [] b = new int [5];
+
+  for(int i = 0; i < a.length; i++){
+    b[i] = (int)Math.sqrt(a[i]);//Foi necessario fazer um casting 
+  }
+
+  System.out.println("Vetor A");
+  for(int i = 0; i < a.length; i++){
+    System.out.print(a[i]+" ");
+  }
+
+  System.out.println();
+
+  System.out.println("Vetor B");
+  for(int i = 0; i < b.length; i++){
+    System.out.print(b[i]+" ");
+  }
+}
+}
